@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Katie Eastman</title>
+        <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+        <link href="../CSS/custom-styles.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c0d7237063.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="../JavaScript/scripts.js" defer></script>
+    </head>
+
+    <body class="d-flex flex-column min-vh-100">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid py-1">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center fw-bold" id="navbarNav">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-3 hvr-bob">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item px-3 hvr-bob">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item px-3 hvr-bob">
+                            <a class="nav-link" href="credentials.html">Credentials</a>
+                        </li>
+                        <li class="nav-item dropdown px-3">
+                            <a class="nav-link dropdown-toggle hvr-bob" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Projects</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="projects/art-resources-catalogue.html">Art Resources Catalogue</a></li>
+                                <li><a class="dropdown-item" href="projects/pixie-potions.html">Pixie Potions</a></li>
+                                <li><a class="dropdown-item" href="projects/toki-pona.html">Toki Pona</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-3 hvr-bob">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container mt-5 flex-grow-1">
+
+            <div id="contactDiv" class="row justify-content-center mb-5">
+                <div class="col-md-6">
+                    <div class="custom p-5 border border-primary rounded border-3 text-center">
+                        <form onsubmit="confirmSubmit()" method="post" action="">
+                            <h3 class="mb-4"><i class="fa-solid fa-envelope"></i> Contact Me Here</h3>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name:</label>
+                                <input type="text" placeholder="Jane Doe" class="form-control" id="name" name="name" pattern="^[A-za-z\s]{2,50}$" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" placeholder="jdoe@example.com" class="form-control" id="email" name="email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="reason" class="form-label">Reason for Contact:</label>
+                                    <select class="form-select" id="reason" name="reason" required>
+                                        <option value="">Choose one...</option>
+                                        <option>Freelance Opportunity</option>
+                                        <option>Employment Opportunity</option>
+                                        <option>Question</option>
+                                        <option>Other</option>
+                                    </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="details" class="form-label">Details:</label>
+                                <textarea class="form-control" id="details" name="details" rows="5" pattern=".{10,1000}" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                   
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="mt-auto text-center w-100 custom mb-0 py-1">
+                <a target="_blank" href="https://github.com/Katie-Eastman"><i class="fa-brands fa-github"></i> GitHub</a>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
