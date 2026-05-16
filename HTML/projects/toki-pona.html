@@ -54,17 +54,67 @@
 
             <div id="projectDiv" class="custom rounded border border-primary border-3 p-4 mb-5">
                 <h3 class="text-center mb-1">
-                    <a href="https://github.com/Katie-Eastman/TokiPona" target="_blank"><i class="bi bi-link-45deg"></i>Toki Pona</a>
+                    <a href="https://katie-eastman.github.io/TokiPona/" target="_blank"><i class="bi bi-link-45deg"></i>Toki Pona</a>
                 </h3>
                 <h6 class="text-center mb-3">
-                    HTML, CSS, JS, Vue.js
+                    HTML, CSS, JS, Vue.js, Bootstrap
                 </h6>
                 <p class="px-4">
-                    Example text
+                    This project is a simple single page application built using Vue.js and Bootstrap. I have always been fascinated 
+                    by the history of and usage of the conlang Toki Pona, and so I figured I would make a site about it. At present, 
+                    the site gives an introductory explanation of what the language is, its history, and its purpose. In addition, it 
+                    includes interactive flashcards for each of Toki Pona's essential vocabulary words, so that the user can learn the 
+                    words themself if they so choose. 
+                </p>
+                <p class="px-4">
+                    This site currently includes the use of 5 Vue components: TopBar.vue, About.vue, Flashcard.vue (this contains the logic for each individual flashcard), 
+                    FlashcardView.vue (this contains the logic for switching between the flashcards, as well as how to display them), and Footer.vue 
+                    (this includes links to the official Toki Pona website, as well as the Wikipedia article for the language). 
+                    In the future, I would like to make a number of improvements and expansions to the site. I wish to add more pages for different topics 
+                    about Toki Pona, with Vue routing between the pages. Also, I would like to improve the overall styling/animations, as well as the 
+                    interactivity of the flashcards (save to local storage, study sessions, etc).
                 </p>
             </div>
 
+            <div
+                id="carouselExampleIndicators"
+                class="carousel slide carousel-fade mb-5"
+                data-bs-ride="carousel"
+            >
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                </div>
 
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../../images/toki-pona/image-1.png" class="d-block w-100">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="../../images/toki-pona/image-2.png" class="d-block w-100">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="../../images/toki-pona/image-3.png" class="d-block w-100">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
 
         </main>
 
